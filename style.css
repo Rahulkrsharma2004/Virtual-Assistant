@@ -13,6 +13,7 @@ body {
 }
 
 #main{
+    margin-top: 20px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -22,15 +23,47 @@ body {
     gap: 30px;
 }
 
-#main img{
-    width: 300px;
+.logo{
+    width: 250px;
     height: auto;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #main h1 {
     color: #ffffff;font-family: "Rubik Wet Paint", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+#talkButton {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #6a11cb, #b9c3d5);
+    color: rgb(0, 0, 0); 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#talkButton:hover {
+    letter-spacing: 0.5px;
+    transform: scale(1.05); 
+}
+
+
+#talkButton img {
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+}
+
+
+.voice{
+    width: 130px;
+    border-radius: 50%;
+    display: none;
 }
